@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="V. W. Vats">
+  <title>Rock Paper Spock</title>
+  <!-- INSERT FAVICON -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Rock Paper Lizard Spock</h1>
+      <p>Read the <a href="https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock" target="_blank">Rules</a></p>
+    </div>
+
+    <!-- Player container -->
+    <div class="player-container" id="player">
+      <h2>You - <span class="player-score" id="playerScore"></span><span class="choice" id="playerChoice"></span></h2>
+      <i class="far fa-hand-rock" title="Rock" id="playerRock" onclick="select('rock')"></i>
+      <i class="far fa-hand-paper" title="Paper" id="playerPaper" onclick="select('paper')"></i>
+      <i class="far fa-hand-scissors" title="Scissors" id="playerScissors" onclick="select('scissors')"></i>
+      <i class="far fa-hand-lizard" title="Lizard" id="playerLizard" onclick="select('lizard')"></i>
+      <i class="far fa-hand-spock" title="Spock" id="playerSpock" onclick="select('spock')"></i>
+    </div>
+
+    <!-- CPU container -->
+    <div class="cpu-container" id="cpu">
+      <h2>CPU - <span class="cpu-score" id="cpuScore"></span><span class="choice" id="cpuChoice"></span></h2>
+      <i class="far fa-hand-rock" title="Rock" id="cpuRock"></i>
+      <i class="far fa-hand-paper" title="Paper" id="cpuPaper"></i>
+      <i class="far fa-hand-scissors" title="Scissors" id="cpuScissors"></i>
+      <i class="far fa-hand-lizard" title="Lizard" id="cpuLizard"></i>
+      <i class="far fa-hand-spock" title="Spock" id="cpuSpock"></i>
+    </div>
+
+    <!-- Reset icon -->
+    <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetAll()"></i>
+
+    <!-- Result text -->
+    <div class="result-container">
+      <h3 class="result-text" id="resultText"></h3>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="index.js" type="module"></script>
+</body>
+</html>

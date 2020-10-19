@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fcfcfc;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.game-container {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.5);
+  height: 600px;
+  width: 530px;
+}
+
+.header {
+  background: #274690;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: Bangers, serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  margin-top: 1em;
+}
+
+p {
+  color: #f45b69;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+p a {
+  color: #f45b69;
+}
+
+p a:hover {
+  color: #fff;
+}
+
+.player-container,
+.cpu-container  {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 30px;
+}
+
+#player .far,
+#player .choice {
+  color: #274690;
+  cursor: pointer;
+}
+
+#cpu .far,
+#cpu .choice {
+  color: #f45b69;
+}
+
+#player .far:last-of-type,
+#cpu .far:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: black !important;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 90%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .cpu-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .cpu-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
